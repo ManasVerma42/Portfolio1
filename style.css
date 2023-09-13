@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+}
+
+nav img{
+    margin-left: 20px;
+    width:100px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 40px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.text{
+    padding-left: 10vmin;
+    margin-top: 8%;
+    margin-left: 30px;
+    color: antiquewhite;
+    top: 30%;
+}
+
+.text h1{
+    font-size: 120px;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.text p{
+    margin-left: 6%;
+    margin-top: 60px;
+    font-size: 30px;
+
+    font-family: 'Kalam', cursive;
+
+}
+
+.text span{
+    animation: color-change 20s linear infinite;
+}
+
+@keyframes color-change{
+    0% {color:rgb(255, 7, 7)  }
+    10%{color:rgb(255, 7, 127) }
+    20%{color: rgb(233, 23, 188) }
+    30%{color:rgb(210, 7, 255) }
+    40%{color:rgb(93, 0, 255) }
+    50%{color:rgb(32, 7, 255) }
+    60%{color: rgb(0, 164, 253)  }
+    70%{color:rgb(7, 255, 251) }
+    80%{color:rgb(7, 255, 52) }
+    90%{color:rgb(114, 255, 7) }
+    100%{color:  rgb(255, 238, 7) }
+}
+
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.image{
+    margin-left: 30vmin;
+    margin-top: 7%;
+}
+
+.projects{
+    margin-left: 49%;
+    color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vmin;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.down1{
+    margin-top: 5px;
+    margin-left: 8.75vmin;
+    display: flex;
+    justify-content: center;
+}
+
+.down{
+    width: 60px;
+    height: 30px;
+}
