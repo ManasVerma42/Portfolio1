@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     background-color: black;
+    font-size: 100%;
 }
 
 nav{
@@ -12,26 +13,28 @@ nav{
 }
 
 nav img{
-    margin-left: 20px;
+    margin-left: 1.5rem;
     width:100px;
 }
 
 .nav-links{
-    flex: 1;
+    /* flex: 1; */
+    position: relative;
+    display: flex;
     text-align: right;
 }
 
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 40px;
+    padding: 2.5rem;
     position: relative;
 }
 
 .nav-links ul li a{
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 2rem;
 
     font-family: 'Exo 2', sans-serif;
     font-family: 'Rubik Iso', cursive;
@@ -41,13 +44,13 @@ nav img{
 .text{
     padding-left: 10vmin;
     margin-top: 8%;
-    margin-left: 30px;
+    margin-left: 2rem;
     color: antiquewhite;
     top: 30%;
 }
 
 .text h1{
-    font-size: 120px;
+    font-size: 7.5rem;
 
     font-family: 'Poppins', sans-serif;
 
@@ -55,15 +58,15 @@ nav img{
 
 .text p{
     margin-left: 6%;
-    margin-top: 60px;
-    font-size: 30px;
+    margin-top: 4rem;
+    font-size: 2rem;
 
     font-family: 'Kalam', cursive;
 
 }
 
 .text span{
-    animation: color-change 20s linear infinite;
+    animation: color-change 20s infinite;
 }
 
 @keyframes color-change{
@@ -83,32 +86,41 @@ nav img{
 .content{
     display: flex;
     width: 100%;
+    columns: 2;
 }
 
 .image{
     margin-left: 30vmin;
-    margin-top: 7%;
+    margin-top: 6%;
+}
+
+.image img{
+    width: 32rem;
+    height: 34.5rem;
 }
 
 .projects{
-    margin-left: 49%;
+    margin-top: 1rem;
+    padding: 0%;
+    text-align: center;
     color: antiquewhite;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vmin;
+    font-size: 2rem;
 
     font-family: 'Poppins', sans-serif;
 
 }
 
-.down1{
-    margin-top: 5px;
-    margin-left: 8.5vmin;
-    display: flex;
-    justify-content: center;
+.down{
+    margin-top: 0.5rem;
+    text-align: center;
 }
 
-.down{
-    width: 60px;
-    height: 30px;
+.downimg{
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Media Queries */
+@media(max-width: 991px){
+    
 }
