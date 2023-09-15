@@ -6,6 +6,15 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Title Icon -->
+    <link rel="icon" type="image/png" href="img/MV (5).png">
+
+    <!-- Typing Animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Linking JavaScript File -->
+    <script src="script.js"></script>
+
     <script src="https://kit.fontawesome.com/664bbbfa49.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="'https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" >"
@@ -40,7 +49,7 @@
     <div class="content">
         <div class="text">
             <h1>I create <span> playful </span> <br> experiences.</h1>
-            <p>Manas Verma / Student Web Developer</p>
+            <p>Manas Verma, <span class="typing"></span></p>
         </div>
 
         <div class="image">
@@ -61,8 +70,10 @@
 </div>
 
 
-<!-- JavaScript for Toggle Menu -->
+
 <script>
+
+// JavaScript for Toggle Menu
     
     var navLinks = document.getElementById("navLinks")
 
@@ -71,8 +82,19 @@
     }
 
     function hideMenu(){
-        navLinks.style.right = "-202px";
+        navLinks.style.right = "-300px";
     }
+
+// JavaSript for Typing Animation
+
+var typed = new Typed(".typing", {
+    strings: ["Student", "Web Developer", "Coder", "Researcher"],
+    typeSpeed: 150,
+    backSpeed: 100,
+    loop: true
+});
+
+
 
 </script>
 
