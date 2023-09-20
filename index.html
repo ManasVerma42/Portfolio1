@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <!-- Linking JavaScript File -->
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 
     <script src="https://kit.fontawesome.com/664bbbfa49.js" crossorigin="anonymous"></script>
 
@@ -35,14 +35,13 @@
         <div class="nameHoverContainer"><div class="nameHover">Manas Verma</div></div>
 
         <div class="nav-links" id="navLinks">
-            <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="https://www.linkedin.com/in/manas-verma-227abb28b/" target="_blank">Resume</a></li>
                 <li><a href="https://github.com/ManasVerma42" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/manas-verma-227abb28b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </div>
-        <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+        <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="ToggleMenu()"></i>
     </nav>
 
 
@@ -73,19 +72,15 @@
 
 <script>
 
-// JavaScript for Toggle Menu
-    
-    var navLinks = document.getElementById("navLinks")
+    function ToggleMenu(){
+        var element = document.getElementById("navLinks");
 
-    function showMenu(){
-        navLinks.style.right = "0";
-        // navLinks.style.display = "block";
-        // navLinks.style.transition = "1s";
-    }
+        if (element.classList.contains("navLinks_open")){
+            element.classList.remove("navLinks_open");
+        } else {
+            element.classList.add("navLinks_open");
+        }
 
-    function hideMenu(){
-        navLinks.style.right = "-300px";
-        // navLinks.style.display = "none";
     }
 
 // JavaSript for Typing Animation
